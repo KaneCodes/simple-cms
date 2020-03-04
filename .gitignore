@@ -1,3 +1,4 @@
 includes/db.php
 db.php
 .DS_STORE
+.gitignore
