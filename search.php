@@ -32,7 +32,7 @@
                     echo "<h1>No Results</h1>";
 
                 } else {
-                    // Handle results
+                    // Handle results 
                     while($row = mysqli_fetch_assoc($search_query)) {
                         // Assign data to variables
                         $post_title = $row['post_title'];
