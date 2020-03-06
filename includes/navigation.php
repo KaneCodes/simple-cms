@@ -39,9 +39,10 @@ include "includes/db.php";
 
 
 
-                    <!-- <li>
-                        <a href="#">About</a>
+                     <li>
+                        <a href="admin/index.php">Admin</a>
                     </li>
+                    <!--
                     <li>
                         <a href="#">Services</a>
                     </li>
