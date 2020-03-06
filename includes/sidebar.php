@@ -24,22 +24,18 @@
     $query = "SELECT * FROM categories";
     // Send query 
     $select_categories_sidebar = mysqli_query($connection, $query);
-
     ?>
-
     <h4>Blog Categories</h4>
     <div class="row">
         <div class="col-lg-12">
             <ul class="list-unstyled">
-
             <?php 
             // Handle results
             while($row = mysqli_fetch_assoc($select_categories_sidebar)) {
-                
+                // Assign Variables
                 $cat_title = $row['cat_title'];
-
+                // Insert data
                 echo "<li><a href='#'>{$cat_title}</a></li>";
-        
             }
             ?>
                 </li>
