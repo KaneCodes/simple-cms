@@ -18,38 +18,39 @@
                     Posts
                     <small>Author</small>
                 </h1>
-                <!-- Posts Table Head -->
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Author</th>
-                            <th>Title</th>
-                            <th>Category</th>
-                            <th>Status</th>
-                            <th>Image</th>
-                            <th>Tags</th>
-                            <th>Comments</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Kane Codes</td>
-                            <td>Bootstrap</td>
-                            <td>Frameworks</td>
-                            <td>Live</td>
-                            <td>Image</td>
-                            <td>Test Tag</td>
-                            <td>Comment</td>
-                            <td>Date</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <?php 
+            
+            if(isset($_GET['source'])) {
 
+                $source = $_GET['source'];
+            } else {
 
+                $source = "";
+            }
 
+            switch($source) {
+
+                case 'add_post';
+                include "includes/add_post.php";
+                break;
+
+                case 2;
+                echo "2";
+                break;
+
+                case 3;
+                echo "3";
+                break;
+
+                default:
+
+                include "includes/view_all_posts.php";
+
+                break;
+            }
+    
+            
+            ?>
 
 
         </div>
