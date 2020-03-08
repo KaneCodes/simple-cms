@@ -22,9 +22,10 @@
         <input value="<?php if(isset($cat_title)){echo $cat_title;} ?>" type="text" class="form-control" name="cat_title">
                 
         <?php }} ?>
+        
         <?php 
         // UPDATE QUERY
-        if(isset($_POST['update_caregory'])) {
+        if(isset($_POST['update_category'])) {
         // Assign variable from URL
         $the_cat_title = $_POST['cat_title'];
         // Create query
@@ -37,10 +38,7 @@
             die("Query failed" . mysqli_error($connection));
             }
             }
-
         ?>
-    
-    
     </div>
     <div class="form-group">
         <input class="btn btn-primary" type="submit" name="update_category" value="Update Category">
